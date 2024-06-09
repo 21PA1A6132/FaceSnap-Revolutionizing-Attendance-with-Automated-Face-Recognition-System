@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('https://assets.mofoprod.net/network/images/Face-id-02.original.png'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .login-container {
+      position: relative;
+    
+       /* Adjust opacity as needed */
+      border-radius: 10px;
+      box-shadow:#000000;
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      transition: transform 0.3s ease-in-out;
+      backdrop-filter: blur(120px);
+    }
+
+    .login-container:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .input-group:hover {
+      transform: scale(1.05);
+    }
+
+    .input-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .input-group input,
+    .input-group select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #803100;
+      transition: border-color 0.3s;
+      color: #000; /* Set color to black */
+    }
+
+    .input-group input:focus,
+    .input-group select:focus {
+      border-color: #007bff;
+    }
+
+    .input-group input::placeholder,
+    .input-group select::placeholder {
+      color: #000; /* Set color to black */
+    }
+
+    /* Prevent options in select elements from blurring */
+    .input-group select option {
+      color: #000;
+    }
+
+    .input-group input[type="date"] {
+      width: calc(105% - 40px); /* Adjust width here */
+    }
+
+    .input-group button {
+      width: 40%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .input-group button:hover {
+      background-color: #0056b3;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+<div class="login-container">
+  <h2>Welcome to View Page</h2>
+  <form id="login-form" action="\view_submit" method="get">
+    <div class="input-group">
+      <label for="year">Year of Study</label>
+      <select id="year" name="year" required>
+        <option value="">Select Year</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="branch">Branch</label>
+      <select id="branch" name="branch" required>
+        <option value="">Select Branch</option>
+        <option value="CSE">Computer Science and Engineering</option>
+        <option value="AIML">Artificial Intelligence and Machine Learning</option>
+        <option value="AIDS">Artificial Intelligence and Data Science</option>
+        <option value="IT">Information Technology</option>
+        <option value="CSBS">Computer Science and Business Systems</option>
+        <option value="ECE">Electrical and Electronics Engineering</option>
+        <option value="ECE">Electronics Communication and Engineering</option>
+        <option value="ME">Mechanical Engineering</option>
+        <option value="CE">Civil Engineering</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="section">Section</label>
+      <select id="section" name="section" required>
+        <option value="">Select Section</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="period">Period</label>
+      <select id="period" name="period" required>
+        <option value="">Select Period</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <div class="input-group center">
+      <button type="submit">Get data</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            body{
+                text-align: center;
+                background-size: cover;
+                background-image: url(https://t3.ftcdn.net/jpg/03/57/34/50/240_F_357345055_WNt03HNBMoh4uf4BGifTPuyCNd7OWB3t.jpg);
+            }
+            h1{
+                font-size: 40px;
+                color: rgb(249, 255, 255);
+                margin-top: 5%;
+                margin-left: 25%;
+                margin-right: 25%;
+                border-radius: 10px;
+                text-shadow: 1px 1px;
+                font-family: emoji;
+            }
+            .hi{
+                color: black;
+            }
+            .fac input{
+                width: 60%;
+                padding: 12px;
+                margin-top: 8px;
+                margin-bottom: 16px;
+                align-items: center;
+                text-align: center;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-sizing: border-box;
+            }
+            .fac{
+                padding-top: 40px;
+                margin-top: 4%;
+                margin-left: 35%;
+                text-align: center;
+                width: 30%;
+                padding-bottom: 2%;
+                box-shadow: 0 0 15px rgba(236, 231, 231, 0.877);  
+                border-radius: 10%;
+            }
+            .f1{
+                text-decoration: none;
+                width: 40%;
+                margin-top: auto;
+                margin-bottom: 5px;
+                padding: 10px;
+                color: aliceblue;
+                background-color: black;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-sizing: border-box;
+            }
+            .s1{
+                text-decoration: none;
+                width: 40%;
+                padding: 10px;
+                color: black;
+                background-color: #ccc;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-sizing: border-box;
+                box-shadow: 0 0 20px rgb(109, 59, 22);
+            }
+            .f1:active{
+                background: radial-gradient(circle, rgba(255, 255, 255, 0.356) 0%, rgba(255,255,255,0) 70%);
+                color: black;
+                box-shadow: 0 0 10px black;
+            }
+            .f1:hover{
+                background-color: aliceblue;
+                color: black;
+            }
+            .no{
+                width: 30%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-sizing: border-box;
+            }
+            .no:hover{
+                background-color: mediumblue;
+                color: white;
+                transform: scale(1.1);
+            }
+            .hi:hover{
+                transform: scale(1.1);
+            }
+            .fac:hover{
+                transform: scale(1.05);
+                backdrop-filter: blur(0%);
+            }
+            h2{
+                font-size: 30px;
+                color:rgb(255, 255, 255);
+                text-shadow: 0.5px 0.5px;
+                margin-left: 30%;
+                margin-right: 30%;
+                border-radius: 10px;
+                font-family: cursive;
+            }
+            video{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+        <h1 class="hii">Face Snap</h1>
+        <h2>Student Login Page</h2>
+            <div class="fac">
+                <div class="t1">
+                    <a href="FacultyLogin.html" class="f1">Faculty Login</a>
+                    <a class="s1">Student Login</a><br><br>
+                    <input type="text" placeholder="Username" class="hi" required><br>
+                    <input type="password" placeholder="Password" class="hi" required><br>
+                    <button type="submit" class="no">Login</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

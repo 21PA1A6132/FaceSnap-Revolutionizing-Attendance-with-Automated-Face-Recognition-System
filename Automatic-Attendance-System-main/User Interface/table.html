@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        #myVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            color: azure;
+            text-align: center;
+            width: 45%;
+            padding: 12px;
+            margin-top: 8%;
+            margin-bottom: 16px;
+            margin-left: 25%;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(236, 231, 231, 0.877); 
+            border-radius: 10px;
+            box-sizing: border-box;
+            backdrop-filter: blur(3px);
+            transition: transform 0.3s ease;
+        }
+
+        .content:hover {
+            backdrop-filter: blur(9px);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgb(228, 200, 231); 
+        }
+
+        a {
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            height: 50px;
+            width: 110px;
+            border-radius: 5px;
+            background-color: aliceblue;
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: darkgray;
+        }
+        table {
+            margin-top: 3%;
+            margin-left: 30%;
+            width: 40%;
+        }
+
+        h1 {
+            font-family: monospace;
+        }
+
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="black.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="content">
+            <h1>Check Your Attendance</h1>
+            <p><b>Date:</b>' + jsonData.date +  ' </p>
+            <p><b>Year:</b> ' + jsonData.year +  '</p>
+            <p><b>Branch:</b> ' + jsonData.branch +  '</p>
+            <p><b>Section:</b>' + jsonData.section +  ' </p>
+            <p><b>Period:</b>' + jsonData.period +  ' </p>
+            <table border="1">
+                <tr>
+                    <td><b>Register</b></td>
+                    <td><b>Status(P/A)</b></td>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td rowspan="1">1</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
