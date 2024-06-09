@@ -45,3 +45,21 @@ Developed an automated attendance marking system that utilizes advanced facial r
 
 ## Project Outcome
 The automated attendance marking system was successfully implemented and tested, showcasing a significant improvement in attendance tracking efficiency and accuracy. The project highlights my capability to develop and integrate machine learning models into practical applications, demonstrating strong problem-solving and technical skills.
+
+## Screenshots
+Here are some screenshots of the web UI and results:
+
+### Model Working
+![Model_result](Automatic-Attendance-System-main/images/result_1.png)
+
+### Web UI
+![Web UI](Automatic-Attendance-System-main/images/UI.png)
+
+### Student Login
+![Student Login](Automatic-Attendance-System-main/images/student_login.png)
+
+### Faculty Login
+![Faculty Login](Automatic-Attendance-System-main/images/faculty_login.png)
+
+### Attendance Report
+![Attendance Results](Automatic-Attendance-System-main/images/attendance-report.png)
